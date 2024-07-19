@@ -41,14 +41,8 @@ Each folder corresponds to a specific challenge, containing:
 4. **Check the `Solution.java` for my implementation.**
 
 <br>
-
-6. **Create Main.class:**
-
-    ```sh
-    javac Main.java
-    ```
     
-7. **Execute**
+5. **Execute**
  
     ```sh
     java Main
