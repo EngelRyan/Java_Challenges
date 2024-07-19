@@ -32,10 +32,29 @@ Each folder corresponds to a specific challenge, containing:
     ```sh
     cd java_challenges/challenge_001
     ```
+<br>
 
 3. **Open and review the `ChallengeDescription.md` to understand the problem.**
 
+<br>
+
 4. **Check the `Solution.java` for my implementation.**
+
+<br>
+
+6. **Create Main.class:**
+
+    ```sh
+    javac Main.java
+    ```
+    
+7. **Execute**
+ 
+    ```sh
+    java Main
+    ```
+    
+
 
 
 
