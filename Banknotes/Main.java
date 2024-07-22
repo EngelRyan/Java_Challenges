@@ -8,17 +8,17 @@ public class Main {
 
         int value = input.nextInt();
 
-        double[] bankNotes = {100,50,20,10,5,2,1};
+        int[] bankNotes = {100,50,20,10,5,2,1};
 
         if(value>0 && value < 1000000){
             System.out.println(value);
-            for (double note : bankNotes) {
+            for (int note : bankNotes) {
 
-                int howMany = (int) (value/note);
+                int howMany = value/note;
 
-                value = (int) (value%note);
+                value =  value%note;
                                 
-                System.out.printf("%d nota(s) de R$ %.0f,00",howMany,note);
+                System.out.printf("%d nota(s) de R$ %d,00",howMany,note);
                 System.out.println();
 
             }
