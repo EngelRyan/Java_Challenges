@@ -11,16 +11,31 @@ Print the minimum quantity of banknotes and coins necessary to change the initia
 
 #### Output Sample
 NOTAS:
+<br>
 5 nota(s) de R$ 100.00
+<br>
 1 nota(s) de R$ 50.00
+<br>
 1 nota(s) de R$ 20.00
+<br>
 0 nota(s) de R$ 10.00
+<br>
 1 nota(s) de R$ 5.00
+<br>
 0 nota(s) de R$ 2.00
+<br>
 MOEDAS:
+<br>
 1 moeda(s) de R$ 1.00
+<br>
 1 moeda(s) de R$ 0.50
+<br>
 0 moeda(s) de R$ 0.25
+<br>
 2 moeda(s) de R$ 0.10
+<br>
 0 moeda(s) de R$ 0.05
+<br>
 3 moeda(s) de R$ 0.01
+<br>
+
