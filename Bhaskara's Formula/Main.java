@@ -7,18 +7,21 @@ public class Main {
 
         Scanner input = new Scanner(System.in);
 
-        String product1 = input.nextLine();
-        String product2 = input.nextLine();
+        double a = input.nextDouble();
+        double b = input.nextDouble();
+        double c = input.nextDouble();
 
-        String[] list1 = product1.split(" ");
-        String[] list2 = product2.split(" ");
+        if (a == 0 || b*b<(4*a*c)) {
+            System.out.print("Impossivel calcular");
+        }
+        else{
+            double x1 = ((-b) + Math.sqrt((b*b)-(4*a*c)))/(2*a);
+            double x2 = ((-b) - Math.sqrt((b*b)-(4*a*c)))/(2*a);
 
-        double value1 = Integer.parseInt(list1[1]) * Double.parseDouble(list1[2]);
-        double value2 = Integer.parseInt(list2[1]) * Double.parseDouble(list2[2]);
-
-        double result = value1+value2;
-
-        System.out.printf("VALOR A PAGAR: R$ %.2f",result);
+            System.out.printf("R1 = %.5f",x1);
+            System.out.println();
+            System.out.printf("R2 = %.5f",x2);
+        }
         System.out.println();
 
         input.close();
