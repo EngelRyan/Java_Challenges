@@ -1,3 +1,5 @@
+package MATHEMATICS.Friends;
+
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -14,7 +16,7 @@ public class Main {
             int m = input.nextInt();
             int n = input.nextInt();
 
-            values.add(pay(m,n));
+            //values.add(pay(m,n));
         }
         
         for(int value : values){
@@ -22,12 +24,5 @@ public class Main {
         }
         input.close();
         
-    }
-    public static int pay(int m, int n) {
-        
-
-
-
-
     }
 }

@@ -19,16 +19,16 @@ The output should contain, for each test case, an integer equal to the value tha
     </tr>
     <tr>
         <td>
-        4
-        0 1
-        1 0
-        1 1
-        2 1  
+        4<br>
+        0 1<br>
+        1 0<br>
+        1 1<br>
+        2 1 
         </td>
         <td>
-        2
-        2
-        3
+        2<br>
+        2<br>
+        3<br>
         5
         </td>
     </tr>  
