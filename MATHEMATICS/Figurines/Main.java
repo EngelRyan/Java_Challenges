@@ -1,4 +1,4 @@
-package Figurines;
+package MATHEMATICS.Figurines;
 
 import java.io.IOException;
 import java.util.ArrayList;
