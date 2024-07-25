@@ -1,5 +1,3 @@
-package MATHEMATICS.Friends;
-
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -15,8 +13,7 @@ public class Main {
         while(t --> 0){
             int m = input.nextInt();
             int n = input.nextInt();
-
-            //values.add(pay(m,n));
+            System.out.println("TESTE");
         }
         
         for(int value : values){
