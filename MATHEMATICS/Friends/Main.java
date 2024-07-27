@@ -3,7 +3,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 public class Main {
 
-    private static int[][] memo = new int[5][201]; 
+    private static int[][] memo = new int[5][300]; 
 
     public static void main(String[] args) {
         
@@ -25,22 +25,16 @@ public class Main {
         
     }
     private static int pay(int m, int n){
-        String key = m + "," + n;
-
-
-        int result;
-
-        if(m==0){
-            result = n+1;
+        if (memo[m][n] != 0) {
+            return memo[m][n];
         }
+        if(m==0){
+            return memo[m][n] = n + 1;        }
         else if(n==0){
-            result = pay(m-1,1); 
+            return memo[m][n] = pay(m - 1, 1);
         }
         else{
-            result = pay(m-1, pay(m, n-1));
+            return memo[m][n] = pay(m - 1, pay(m, n - 1));
         }
-
-        
-        return result;
     }
 }
