@@ -23,7 +23,7 @@ public class Main {
             System.out.println(value);
         }
         input.close();
-        int temp = 0;
+        int temp = 1;
     }
     private static int pay(int m, int n){
         if (memo[m][n] != 0) {
