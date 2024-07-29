@@ -16,13 +16,14 @@ public class Main {
             int m = input.nextInt();
             int n = input.nextInt();
             values.add(pay(m,n));
+            System.out.println();
         }
         
         for(int value : values){
             System.out.println(value);
         }
         input.close();
-        
+        int temp = 0;
     }
     private static int pay(int m, int n){
         if (memo[m][n] != 0) {
