@@ -11,21 +11,22 @@ public class Main {
         int a = input.nextInt();
         int b = input.nextInt();
     
-        //int[] numbers = new int[];
-
         String[] numberToStrings = new String[b-a+1];
-        String[] numbers = 
+        String[] numbers = {"0","1","2","3","4","5","6","7","8","9"};
 
         for(int i = a, n = 0; i<=b; i++,n++){
             numberToStrings[n] = String.valueOf(i);
         }
         
-        for(String numString : numberToStrings){
-            if () {
-                
+        for(String number : numbers){
+            int q = 0;
+            for(String numString : numberToStrings){
+                if (numString.contains(number)) {
+                    q += 1;
+                }
             }
+            System.out.print(q);
         }
-
         input.close();
     }
 }
