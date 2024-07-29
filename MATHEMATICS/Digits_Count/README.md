@@ -19,7 +19,7 @@ For each test case print a single line with 10 integers representing the number 
     </tr>
     <tr>
         <td>
-        1 9<br>
+        <br>1 9<br>
         12 321<br>
         5987 6123<br>
         12345678 12345679<br>
