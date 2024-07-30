@@ -26,6 +26,8 @@ public class Main {
             System.out.println();
             if ((media+exam)/2 >= 5.0) {
                 System.out.println("Aluno aprovado.");
+                System.out.printf("Media final: %.1f",(media+exam)/2);
+
             }
             else{
                 System.out.println("Aluno reprovado.");
