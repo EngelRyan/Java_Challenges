@@ -23,6 +23,7 @@ public class Main {
             System.out.println("Aluno em exame.");
             double exam = input.nextDouble();
             System.out.printf("Nota do exame: %.1f",exam);
+            System.out.println();
             if ((media+exam)/2 >= 5.0) {
                 System.out.println("Aluno aprovado.");
             }
