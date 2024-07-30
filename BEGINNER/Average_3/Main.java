@@ -17,11 +17,24 @@ public class Main {
             System.out.println();
             System.out.println("Aluno aprovado.");
         }
-
-     
-
-
-
+        else if(media>=5 && media <=6.9){
+            System.out.printf("Media: %.1f",media);
+            System.out.println();
+            System.out.println("Aluno em exame.");
+            double exam = input.nextDouble();
+            System.out.printf("Nota do exame: %.1f",exam);
+            if ((media+exam)/2 >= 5.0) {
+                System.out.println("Aluno aprovado.");
+            }
+            else{
+                System.out.println("Aluno reprovado.");
+            }
+        }
+        else{
+            System.out.printf("Media: %.1f",media);
+            System.out.println();
+            System.out.println("Aluno reprovado.");
+        }
         input.close();
     }
 }
