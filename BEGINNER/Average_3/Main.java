@@ -12,7 +12,13 @@ public class Main {
         
         double media = ((2*n1)+(3*n2)+(4*n3)+n4) / 10;
 
-        System.out.println(media);
+        if(media>=7){
+            System.out.printf("Media: %.1f",media);
+            System.out.println();
+            System.out.println("Aluno aprovado.");
+        }
+
+     
 
 
 
