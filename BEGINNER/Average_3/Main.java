@@ -20,17 +20,20 @@ public class Main {
         else if(media>=5 && media <=6.9){
             System.out.printf("Media: %.1f",media);
             System.out.println();
-            System.out.println("Aluno em exame.");
+            System.out.print("Aluno em exame.");
             double exam = input.nextDouble();
+            System.out.println();
             System.out.printf("Nota do exame: %.1f",exam);
             System.out.println();
             if ((media+exam)/2 >= 5.0) {
                 System.out.println("Aluno aprovado.");
                 System.out.printf("Media final: %.1f",(media+exam)/2);
-
+                System.out.println();
             }
             else{
                 System.out.println("Aluno reprovado.");
+                System.out.printf("Media final: %.1f",(media+exam)/2);
+                System.out.println();
             }
         }
         else{
