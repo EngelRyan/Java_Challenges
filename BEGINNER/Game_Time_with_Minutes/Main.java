@@ -13,7 +13,7 @@ public class Main {
         int endHour = input.nextInt()*3600;
         int endMin = input.nextInt()*60;
 
-        int gameHours = (startHour+startMin)-(endHour+endMin);
+        int gameHours = (endHour+endMin)-(startHour+startMin);
         int temp = gameHours;
         gameHours /= 3600;
         int gameMin = temp%3600;
