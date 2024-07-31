@@ -1,3 +1,4 @@
+
 import java.io.IOException;
 import java.util.Scanner;
 
@@ -7,10 +8,14 @@ public class Main {
 
         Scanner input = new Scanner(System.in);
 
-        int start_hour = input.nextInt();
-        int star_min = input.nextInt();
-        int end_hour = input.nextInt();
-        int end_min = input.nextInt();
+        int startHour = input.nextInt()*3600;
+        int startMin = input.nextInt()*60;
+        int endHour = input.nextInt()*3600;
+        int endMin = input.nextInt()*60;
+
+        int gameTime = (startHour+startMin)-(endHour+endMin);
+        
+
 
         input.close();
     }
