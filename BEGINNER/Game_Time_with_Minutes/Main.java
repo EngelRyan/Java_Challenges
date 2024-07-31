@@ -7,7 +7,10 @@ public class Main {
 
         Scanner input = new Scanner(System.in);
 
-        
+        int start_hour = input.nextInt();
+        int star_min = input.nextInt();
+        int end_hour = input.nextInt();
+        int end_min = input.nextInt();
 
         input.close();
     }
