@@ -14,7 +14,7 @@ public class Main {
         int gameSeconds = (endHour + endMin) - (startHour + startMin);
 
         if (gameSeconds <= 0) {
-            gameSeconds += 24 * 3600; // Adiciona 24 horas em segundos
+            gameSeconds += 24 * 3600;
         }
 
         int gameHours = gameSeconds / 3600;
