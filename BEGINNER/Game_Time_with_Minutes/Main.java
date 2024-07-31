@@ -20,7 +20,7 @@ public class Main {
         int gameHours = gameSeconds / 3600;
         int gameMin = (gameSeconds % 3600) / 60;
 
-        System.out.printf("O JOGO DUROU %d HORA(S) E %d MINUTO(S)\n", gameHours, gameMin);
+        System.out.printf("O JOGO DUROU %d HORA(S) E %d MINUTO(S)", gameHours, gameMin);
         System.out.println();
 
         input.close();
