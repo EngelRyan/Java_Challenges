@@ -1,30 +1,27 @@
-
 import java.io.IOException;
 import java.util.Scanner;
 
 public class Main {
 
     public static void main(String[] args) throws IOException {
-
         Scanner input = new Scanner(System.in);
 
-        int startHour = input.nextInt()*3600;
-        int startMin = input.nextInt()*60;
-        int endHour = input.nextInt()*3600;
-        int endMin = input.nextInt()*60;
+        int startHour = input.nextInt() * 3600;
+        int startMin = input.nextInt() * 60;
+        int endHour = input.nextInt() * 3600;
+        int endMin = input.nextInt() * 60;
 
-        int gameHours = (endHour+endMin)-(startHour+startMin);
-        int temp = gameHours;
-        gameHours /= 3600;
-        int gameMin = temp%3600;
-        gameMin /= 60;
-        if(gameHours == 0 && gameMin == 0)System.out.println("O JOGO DUROU 24 HORA(S) E 0 MINUTO(S)");
+        int gameSeconds = (endHour + endMin) - (startHour + startMin);
 
-        else System.out.printf("O JOGO DUROU %d HORA(S) E %d MINUTOS(S)",gameHours,gameMin);
+        if (gameSeconds <= 0) {
+            gameSeconds += 24 * 3600; // Adiciona 24 horas em segundos
+        }
 
-        System.out.println();
+        int gameHours = gameSeconds / 3600;
+        int gameMin = (gameSeconds % 3600) / 60;
+
+        System.out.printf("O JOGO DUROU %d HORA(S) E %d MINUTO(S)\n", gameHours, gameMin);
 
         input.close();
     }
-
 }
