@@ -21,6 +21,7 @@ public class Main {
         int gameMin = (gameSeconds % 3600) / 60;
 
         System.out.printf("O JOGO DUROU %d HORA(S) E %d MINUTO(S)\n", gameHours, gameMin);
+        System.out.println();
 
         input.close();
     }
