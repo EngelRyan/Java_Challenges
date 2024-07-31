@@ -18,10 +18,11 @@ public class Main {
         gameHours /= 3600;
         int gameMin = temp%3600;
         gameMin /= 60;
+        if(gameHours == 0 && gameMin == 0)System.out.println("O JOGO DUROU 24 HORA(S) E 0 MINUTO(S)");
 
-        System.out.printf("O JOGO DUROU %d HORA (S) E %d MINUTOS (S)",gameHours,gameMin);
+        else System.out.printf("O JOGO DUROU %d HORA(S) E %d MINUTOS(S)",gameHours,gameMin);
 
-
+        System.out.println();
 
         input.close();
     }
