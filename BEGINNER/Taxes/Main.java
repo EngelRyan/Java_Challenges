@@ -12,6 +12,14 @@ public class Main {
         if (salary>4500) {
             taxes = ((salary-4500)*28)/100;
             System.out.println(taxes);
+            salary = salary-(salary-4500);
+            System.out.println(salary);
+        }
+        else if(salary>3000 && salary <= 4500){
+            taxes = ((salary-3000)*18)/100;
+            System.out.println(taxes);
+            salary = salary-(salary-3000);
+            System.out.println(salary);
         }
        
         input.close();
