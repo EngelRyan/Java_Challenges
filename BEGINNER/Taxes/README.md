@@ -12,7 +12,7 @@ Remember, if the salary is R$ 3,002.00 for example, the rate of 8% is only over 
 The input contains only a float-point number, with 2 digits after the decimal point.
 
 ### Output
-Print the message "R$" followed by a blank space and the total tax to be payed, with two digits after the decimal point. If the value is up to 2000, print the message "Isento".
+Print the message "R$" followed by a blank space and the total tax to be payed, with two digits after the decimal point. If the value is up to 2000, print the message "Isento".sdsdsd
 
 <table>
   <tr>

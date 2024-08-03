@@ -29,7 +29,6 @@ public class Main {
         else{
             System.out.println("Isento");
         }
-        System.out.println(taxes);
         input.close();
     }
 }
