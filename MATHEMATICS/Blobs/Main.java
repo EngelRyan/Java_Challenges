@@ -1,8 +1,5 @@
-package MATHEMATICS.Blobs;
-
 import java.io.IOException;
 import java.util.Scanner;
-
 
 public class Main {
 
@@ -19,16 +16,14 @@ public class Main {
             double food = input.nextDouble();
 
             while (food > 1) {
-
                 food /= 2;
                 howMany[i]++;
-
             }
         }
         for(int days : howMany){
             System.out.printf("%d dias",days);
+            System.out.println();
         }
         input.close();
     }
-    
 }
