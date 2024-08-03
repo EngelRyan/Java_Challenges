@@ -2,8 +2,6 @@ import java.io.IOException;
 import java.util.Scanner;
 
 public class Main {
-    static private int[] n = new int[10];
-    static private int[] m = new int[201];
     public static void main(String[] args) throws IOException {
         Scanner input = new Scanner(System.in);
 
