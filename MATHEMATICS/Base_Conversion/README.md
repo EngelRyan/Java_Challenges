@@ -13,8 +13,8 @@ Note: should print a blank line after each test case, even after the last test c
 
 <table>
   <tr>
-    <th>Input Sample</th>
-    <th>Output Sample</th>
+    <td>Input Sample</td>
+    <td>Output Sample</td>
   </tr>
   <tr>
     <td>3<br>101 bin<br>101 dec<br>8f hex</td>
