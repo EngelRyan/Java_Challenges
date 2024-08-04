@@ -35,35 +35,29 @@ public class Main {
                 String hexValue = Integer.toHexString(decimalValue);
 
                 // Conversão de decimal para binário
-                String binaryString = Integer.toBinaryString(decimalValue);
-                System.out.printf("%s bin",binaryString);
+                String binaryValue = Integer.toBinaryString(decimalValue);
+                System.out.printf("%s bin",binaryValue);
 
                 fomStrings[0] = hexValue + " hex";
-                fomStrings[1] = binaryString + " bin";
+                fomStrings[1] = binaryValue + " bin";
             }
             else if(number.contains("hex")){
-                hexadecimal(value[0]);
+                String hexValue = value[0];
+
+                // Conversão de hexadecimal para decimal
+                int decimalValue = Integer.parseInt(hexValue, 16);
+
+                // Conversão de decimal para binário
+                String binaryValue = Integer.toBinaryString(decimalValue);
+
+                fomStrings[0] = String.valueOf(decimalValue) + " dec";
+                fomStrings[1] = binaryValue + " bin";
+
             }
         }
         for(String f : fomStrings){
             System.out.println(f);
         }
         input.close();
-    }
-
-
-
-    public static void decimal(int decimalValue){
-        
-    }
-
-    public static void hexadecimal(String hexString){
-        // Conversão de hexadecimal para decimal
-        int decimalValue = Integer.parseInt(hexString, 16);
-        System.out.printf("%s dec",decimalValue);
-        System.out.println();
-        // Conversão de decimal para binário
-        String binaryString = Integer.toBinaryString(decimalValue);
-        System.out.printf("bin",binaryString);
     }
 }
