@@ -25,11 +25,21 @@ public class Main {
                 //Conversão de decimal para hexadecimal
                 String hexValue = Integer.toHexString(decimalValue);
 
-                fomStrings[0] = String.valueOf(decimalValue) + "dec";
-                fomStrings[1] = hexValue + "hex";
+                fomStrings[0] = String.valueOf(decimalValue) + " dec";
+                fomStrings[1] = hexValue + " hex";
             }
             else if(number.contains("dec")){
-                decimal(Integer.parseInt(value[0]));
+                int decimalValue = (Integer.parseInt(value[0]));
+
+                // Conversão de decimal para hexadecimal
+                String hexValue = Integer.toHexString(decimalValue);
+
+                // Conversão de decimal para binário
+                String binaryString = Integer.toBinaryString(decimalValue);
+                System.out.printf("%s bin",binaryString);
+
+                fomStrings[0] = hexValue + " hex";
+                fomStrings[1] = binaryString + " bin";
             }
             else if(number.contains("hex")){
                 hexadecimal(value[0]);
@@ -44,13 +54,7 @@ public class Main {
 
 
     public static void decimal(int decimalValue){
-        // Conversão de decimal para hexadecimal
-        String hexString = Integer.toHexString(decimalValue);
-        System.out.printf("%s hex",hexString.toUpperCase());
-        System.out.println();
-        // Conversão de decimal para binário
-        String binaryString = Integer.toBinaryString(decimalValue);
-        System.out.printf("%s bin",binaryString);
+        
     }
 
     public static void hexadecimal(String hexString){
