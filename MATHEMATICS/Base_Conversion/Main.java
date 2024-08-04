@@ -10,9 +10,9 @@ public class Main {
         int n = input.nextInt();
         input.nextLine();
 
-        String[] fomStrings = new String[2];
+        String[] fomStrings = new String[n*2];
 
-        while(n-->0){
+        while(n-->-1){
 
             String number = input.nextLine();
 
@@ -36,7 +36,6 @@ public class Main {
 
                 // Conversão de decimal para binário
                 String binaryValue = Integer.toBinaryString(decimalValue);
-                System.out.printf("%s bin",binaryValue);
 
                 fomStrings[0] = hexValue + " hex";
                 fomStrings[1] = binaryValue + " bin";
