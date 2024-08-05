@@ -14,10 +14,10 @@ public class Main {
             System.out.println("Origem");
         }
         else if(x == 0 && y!= 0){
-            System.out.println("Eixo X");
+            System.out.println("Eixo Y");
         }
         else if(y == 0 && x!= 0){
-            System.out.println("Eixo Y");
+            System.out.println("Eixo X");
         }
         else{
             if (x>0 && y>0) {
