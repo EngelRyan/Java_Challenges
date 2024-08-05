@@ -10,10 +10,10 @@ public class Main {
         int n = input.nextInt();
         input.nextLine();
 
-        String[] fomStrings = new String[n*2];
+        String[] fomStrings = new String[n];
 
-        while(n-->-1){
-
+        for(int i = 0; i<n; i++){
+            
             String number = input.nextLine();
 
             String[] value = number.split(" ");
@@ -25,8 +25,7 @@ public class Main {
                 //Conversão de decimal para hexadecimal
                 String hexValue = Integer.toHexString(decimalValue);
 
-                fomStrings[0] = String.valueOf(decimalValue) + " dec";
-                fomStrings[1] = hexValue + " hex";
+                fomStrings[i] = String.valueOf(decimalValue) + " dec\n" + hexValue + " hex";
             }
             else if(number.contains("dec")){
                 int decimalValue = (Integer.parseInt(value[0]));
@@ -37,8 +36,7 @@ public class Main {
                 // Conversão de decimal para binário
                 String binaryValue = Integer.toBinaryString(decimalValue);
 
-                fomStrings[0] = hexValue + " hex";
-                fomStrings[1] = binaryValue + " bin";
+                fomStrings[i] = hexValue + " hex\n" + binaryValue + " bin";
             }
             else if(number.contains("hex")){
                 String hexValue = value[0];
@@ -49,13 +47,15 @@ public class Main {
                 // Conversão de decimal para binário
                 String binaryValue = Integer.toBinaryString(decimalValue);
 
-                fomStrings[0] = String.valueOf(decimalValue) + " dec";
-                fomStrings[1] = binaryValue + " bin";
-
+                fomStrings[i] = String.valueOf(decimalValue) + " dec\n" + binaryValue + " bin";
             }
         }
+        int c = 1;
         for(String f : fomStrings){
+            System.out.println("Case "+ c+ ":");
             System.out.println(f);
+            System.out.println();
+            c++;
         }
         input.close();
     }
