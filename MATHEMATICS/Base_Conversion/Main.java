@@ -50,12 +50,10 @@ public class Main {
                 fomStrings[i] = String.valueOf(decimalValue) + " dec\n" + binaryValue + " bin";
             }
         }
-        int c = 1;
-        for(String f : fomStrings){
-            System.out.println("Case "+ c+ ":");
-            System.out.println(f);
+        for(int i = 1; i<fomStrings.length+1; i++){
+            System.out.println("Case "+ i +":");
+            System.out.println(fomStrings[i-1]);
             System.out.println();
-            c++;
         }
         input.close();
     }
