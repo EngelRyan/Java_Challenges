@@ -1,6 +1,4 @@
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
@@ -33,18 +31,20 @@ public class Main {
             endSeconds += Integer.parseInt(time.trim())*t;
             t /= 60;
         }
+        int eventTime = endSeconds - startSeconds;
 
-        System.out.println(startSeconds);
-        System.out.println(endSeconds);
+        if (eventTime <= 0) {
+            eventTime += 24 * 3600;
+        }
 
+        int days = eventTime/86400;
+        int hours = (eventTime%86400)/3600;
+        int min = ((eventTime%86400)%3600)/60;
+        int sec = ((eventTime%86400)%3600)%60;
 
-
-
-
-
-
-
-
+        System.out.println(days + " dia(s)");
+        System.out.println(hours + " hora(s)");
+        System.out.println(min + " minuto(s)");
+        System.out.println(sec + " segundo(s)");
     }
- 
 }
