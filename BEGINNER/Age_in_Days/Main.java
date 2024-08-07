@@ -1,5 +1,3 @@
-package BEGINNER.Age_in_Days;
-
 import java.io.IOException;
 import java.util.Scanner;
 
