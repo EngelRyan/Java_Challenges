@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class Main {
 
-    static int[] values = new int[];
+    static int[][] values = new int[5][201];
     public static void main(String[] args) throws IOException {
         Scanner input = new Scanner(System.in);
 
