@@ -2,7 +2,6 @@ import java.io.IOException;
 import java.util.Scanner;
 
 public class Main {
- 
     public static void main(String[] args) throws IOException {
  
         Scanner input = new Scanner(System.in);
@@ -23,15 +22,20 @@ public class Main {
                     min = j; 
                 }
             }
+            int temp = sortValues[min];
+            sortValues[min] = sortValues[i];
+            sortValues[i] = temp;
         }
 
         for(int v : sortValues){
             System.out.println(v);
         }
-
+        System.out.println();
         for(int v : values){
             System.out.println(v);
         }
+
+        input.close();
     }
  
 }
