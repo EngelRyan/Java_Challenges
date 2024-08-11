@@ -16,22 +16,28 @@ Present the output as requested above.
   </tr>
   <tr>
     <td>
-      7 21 -14<br><br>
-      -14 21 7
+    7 21 -14
     </td>
     <td>
-      -14<br>
-      7<br>
-      21<br><br>
-      7<br>
-      21<br>
-      -14<br><br>
-      -14<br>
-      7<br>
-      21<br><br>
-      -14<br>
-      21<br>
-      7
+    -14<br>
+    7<br>
+    21<br><br>
+    7<br>
+    21<br>
+    -14
     </td>
-  </tr>
+    </tr>
+    <tr>
+    <td>
+    -14 21 7
+    </td>
+    <td>
+    -14<br>
+    7<br>
+    21<br><br>
+    -14<br>
+    21<br>
+    7
+    </td>
+    </tr>
 </table>
