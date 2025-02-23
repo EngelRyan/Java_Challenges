@@ -1,6 +1,7 @@
+package MATHEMATICS;
 import java.util.Scanner;;
 
-public class Main {
+public class BaseConversion {
 
     public static void main(String[] args) {
 

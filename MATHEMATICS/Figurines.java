@@ -1,10 +1,10 @@
-package MATHEMATICS.Figurines;
+package MATHEMATICS;
 
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Scanner;
  
-public class Main {
+public class Figurines {
  
     public static void main(String[] args) throws IOException {
  

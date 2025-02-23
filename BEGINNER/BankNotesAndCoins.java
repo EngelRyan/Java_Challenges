@@ -1,9 +1,10 @@
+package BEGINNER;
 import java.io.IOException;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.util.Scanner;;
  
-public class Main {
+public class BankNotesAndCoins {
  
     public static void main(String[] args) throws IOException {
 
