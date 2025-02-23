@@ -1,7 +1,8 @@
+package BEGINNER;
 import java.io.IOException;
 import java.util.Scanner;
 
-public class Main {
+public class EventTime {
     public static void main(String[] args) throws IOException {
         Scanner input = new Scanner(System.in);
 
@@ -9,6 +10,8 @@ public class Main {
         String startTime = input.nextLine();
         String endDay = input.nextLine();
         String endTime = input.nextLine();
+
+        input.close();
 
         //Pegando o dia que começa
         String[] splitTime = startDay.split(" ");
